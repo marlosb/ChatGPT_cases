@@ -16,27 +16,25 @@ A intenção desse projeto é mostrar alguns casos de usos do ChatGPT para o dia
 
  ### Uso
 
- O repositório tem 2 partes:
- Parte 1:
-    O projeto consiste em 5 notebooks de jupyter, sendo:
+ O repositório tem 2 partes:<br>
+ <b>Parte 1</b>: O projeto consiste em 5 notebooks de jupyter, sendo:
 
-    - 1 provision resources.ipynb<br>
-    Esse notebook cria os recursos, o Resource Group, Cognitive Services Account para OpenAI e faz o deployment do modelo gpt35-turbo (que é o modelo do ChatGPT)
+- 1 provision resources.ipynb<br>
+Esse notebook cria os recursos, o Resource Group, Cognitive Services Account para OpenAI e faz o deployment do modelo gpt35-turbo (que é o modelo do ChatGPT)
 
-    - 2 Coho Alimentos.ipynb; 3 Contoso Cosméticos.ipynb; 4 Dados sintéticos.ipynb<br>
-    Esses notebooks se conectam aos recursos criados. Instanciam um prompt, token encoder e objeto para comunicar com a API. Envia os exemplos do casos.
+- 2 Coho Alimentos.ipynb; 3 Contoso Cosméticos.ipynb; 4 Dados sintéticos.ipynb<br>
+Esses notebooks se conectam aos recursos criados. Instanciam um prompt, token encoder e objeto para comunicar com a API. Envia os exemplos do casos.
 
-    - 9 delete resources.ipynb<br>
-    Esse notebook deleta os recursos criados.
+- 9 delete resources.ipynb<br>
+Esse notebook deleta os recursos criados.
 
-Parte 2:
-    São 2 notebooks e alguns arquivos text no subdiretório data/.
+<b>Parte 2</b>: São 2 notebooks e alguns arquivos text no subdiretório data/.
 
-    - data/<br>
-    Arquivos de texto que servem como origem das informações que serão enviadas como contexto para o ChatGPT
+- data/<br>
+ Arquivos de texto que servem como origem das informações que serão enviadas como contexto para o ChatGPT
 
-    - 1 Deploy ada model.ipynb<br>
-    Notebook que cria e faz deploymento de um modelo ada usado na identificação de similaridade
+- 1 Deploy ada model.ipynb<br>
+Notebook que cria e faz deploymento de um modelo ada usado na identificação de similaridade
 
-    - 3 Import and prepare data.ipynb<br>
-    Notebook que faz o fluxo completo: lê os textos dos arquivos, cataloga-os para comparação e compara com cada pergunta para identificar qual o arquivo tem as informações que precisamos. Na sequencia passa essas informações como contexto para o ChatGPT junto com a pergunta do usuário.
+- 3 Import and prepare data.ipynb<br>
+Notebook que faz o fluxo completo: lê os textos dos arquivos, cataloga-os para comparação e compara com cada pergunta para identificar qual o arquivo tem as informações que precisamos. Na sequencia passa essas informações como contexto para o ChatGPT junto com a pergunta do usuário.
